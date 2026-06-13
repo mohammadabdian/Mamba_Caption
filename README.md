@@ -51,6 +51,11 @@ Criterion: CrossEntropyLoss with `ignore_index=pad_token_id` and `label_smoothin
 ## Evaluation Metrics
 BLEU1-4, METEOR, ROUGE-L, SPICE, CIDEr
 
+## 🔜 Coming Soon
+
+- 📊 Full results & ablation studies
+- 📄 Final paper
+
 ## Quick Start
 
 ```bash
@@ -59,9 +64,3 @@ python -m HMT/feature_pipeline/run
 
 # Training
 python -m HMT/train
-
-## 🔜 Coming Soon
-
-- 📊 Full results & ablation studies
-- 📄 Final paper
-
