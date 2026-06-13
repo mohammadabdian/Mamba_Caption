@@ -2,6 +2,10 @@
 
 Official implementation of HMT – a novel encoder-decoder architecture for image captioning that combines Mamba's linear-time efficiency with Transformer's cross-modal alignment capabilities.
 
+## Architecture Overview
+
+![HMT Architecture](assets/diagram.png)
+
 ## Abstract
 
 Image captioning requires efficient modeling of visual-linguistic interactions. Transformers excel at cross-modal alignment but suffer from quadratic complexity, while SSMs like Mamba offer linear scaling but struggle with multi-modal integration. HMT unifies both paradigms through: (1) a Vision Mamba encoder with cross-shaped 2D scanning that preserves spatial topology, (2) a gated feature fusion mechanism, and (3) a causal Mamba decoder with cross-attention. Evaluated on MS COCO and Flickr30k, HMT achieves superior accuracy with reduced computational overhead.
