@@ -1,0 +1,36 @@
+# Core Deep Learning
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.41.2
+accelerate==1.13.0
+
+# Mamba & SSM
+zetascale==2.8.8
+einops==0.8.2
+
+# Data Handling
+datasets==4.8.5
+numpy==2.2.6
+pandas==3.0.2
+
+# Image Processing
+pillow==12.2.0
+opencv-python==4.12.0.88
+
+# Text Processing & Metrics
+nltk==3.9.4
+pycocotools==2.0.11
+pycocoevalcap==1.2
+rouge_score==0.1.2
+
+# Model Utilities
+safetensors==0.7.0
+tokenizers==0.19.1
+huggingface_hub==0.36.2
+
+# Visualization
+matplotlib==3.10.8
+
+# Utils
+tqdm==4.67.3
+scikit-learn==1.5.2

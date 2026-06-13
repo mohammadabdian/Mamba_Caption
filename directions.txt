@@ -1,0 +1,40 @@
+root/                         ← Project root
+│
+├── dataset/
+│   └── mscoco2014/
+│       ├── train2014/
+│       ├── val2014/
+│       └── karpathy_split/
+│           └── dataset_coco.json
+│
+├── features/                 ← Extracted features (saved as files)
+│   ├── train/                ← Features for training set
+│   ├── val/                  ← Features for validation set
+│   └── test/                 ← Features for test set
+│
+├── feature_pipeline/         ← Pipeline for feature extraction
+│   ├── extractor_dataset.py  ← Dataset wrapper for feature extraction
+│   ├── feature_extractor.py  ← Code that defines how features are extracted from images
+│   ├── feature_saver.py      ← Saves extracted features to disk
+│   └── run.py                ← Script to run the full feature extraction pipeline
+│
+├── model/                    ← Model definitions
+│   ├── mamba.py              ← MambaBlock module (custom transformer block)
+│   ├── model.py              ← Captioner model class and Config
+│   ├── modules.py            ← Any auxiliary modules (layers, helpers)
+│   └── pscan.py              ← Possibly specialized model utility (patch scanning or other)
+│
+├── train/                    ← Training and evaluation modules
+│   ├── dataloaders.py        ← Build PyTorch datasets and dataloaders
+│   ├── dataset.py            ← Dataset classes for captioning tasks
+│   ├── engine.py             ← Training loop and optimization
+│   ├── evaluate.py           ← BLEU evaluation
+│   ├── generate.py           ← Caption generation from model
+│   ├── metrics.py            ← METEOR / ROUGE / CIDEr / SPICE evaluation
+│   ├── paths.py              ← Manages all paths in the project
+│   ├── config.py             ← Hyperparameters and configuration settings
+│   └── main.py               ← Main script: runs training, evaluation, and metrics
+│
+├── directions.txt            ← Notes or instructions for the project
+├── kaggle.json               ← Kaggle API credentials
+└── requirements.txt          ← Project dependencies
