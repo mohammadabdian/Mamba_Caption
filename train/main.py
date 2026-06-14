@@ -81,8 +81,6 @@ def main():
         device
     )
     
-    # فقط همين قسمت رو تغيير دادم - metrics_results رو حذف كردم
-    # چون evaluate_bleu خودش همه متريك‌ها رو برمي‌گردونه
     
     results_path = results_dir / "results.json"
     with open(results_path, "w") as f:
