@@ -45,14 +45,14 @@ class COCOCaptionDataset(Dataset):
                 features = np.load(feature_path)['feature']
                 features = torch.from_numpy(features).float()
 
-                # فقط همین، بدون هیچ دستکاری اضافه!
+               
                 tokens = self.tokenizer(
                     caption,
                     padding="max_length",
                     truncation=True,
                     max_length=self.max_length,
                     return_tensors="pt",
-                    add_special_tokens=True   # <-- این خودش همه کار رو می‌کنه
+                    add_special_tokens=True   
                 )
                 
                 input_ids = tokens["input_ids"].squeeze(0)
